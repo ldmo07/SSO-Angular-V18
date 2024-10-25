@@ -1,0 +1,9 @@
+<div>
+  <p><strong>First Name: </strong> {{profile?.givenName}}</p>
+  <p><strong>Last Name: </strong> {{profile?.surname}}</p>
+  <p><strong>Email: </strong> {{profile?.userPrincipalName}}</p>
+  <p><strong>Id: </strong> {{profile?.id}}</p>
+</div>
+
+<button mat-menu-item (click)="logout()">Logout using Redirect</button>
+<button mat-menu-item (click)="logout(true)">Logout using Popup</button>
